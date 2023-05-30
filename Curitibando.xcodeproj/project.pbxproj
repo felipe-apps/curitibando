@@ -13,6 +13,7 @@
 		0200BBE72A26745700865406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0200BBE52A26745700865406 /* Main.storyboard */; };
 		0200BBE92A26745800865406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0200BBE82A26745800865406 /* Assets.xcassets */; };
 		0200BBEC2A26745800865406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0200BBEA2A26745800865406 /* LaunchScreen.storyboard */; };
+		EB6CD09F783B172CC417A09A /* Pods_Curitibando.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8313A459033B365A0F74A953 /* Pods_Curitibando.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0200BBE82A26745800865406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0200BBEB2A26745800865406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0200BBED2A26745800865406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1900714D9ACE86EA49DF5981 /* Pods-Curitibando.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curitibando.release.xcconfig"; path = "Target Support Files/Pods-Curitibando/Pods-Curitibando.release.xcconfig"; sourceTree = "<group>"; };
+		46EB5AC2A0E255A442EAD702 /* Pods-Curitibando.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curitibando.debug.xcconfig"; path = "Target Support Files/Pods-Curitibando/Pods-Curitibando.debug.xcconfig"; sourceTree = "<group>"; };
+		8313A459033B365A0F74A953 /* Pods_Curitibando.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Curitibando.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6CD09F783B172CC417A09A /* Pods_Curitibando.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0200BBDE2A26745700865406 /* Curitibando */,
 				0200BBDD2A26745700865406 /* Products */,
+				750DC56F16C5F9DE551EC343 /* Pods */,
+				73ED3D4F1911E34B985DFBBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = Curitibando;
 			sourceTree = "<group>";
 		};
+		73ED3D4F1911E34B985DFBBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8313A459033B365A0F74A953 /* Pods_Curitibando.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		750DC56F16C5F9DE551EC343 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46EB5AC2A0E255A442EAD702 /* Pods-Curitibando.debug.xcconfig */,
+				1900714D9ACE86EA49DF5981 /* Pods-Curitibando.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0200BBF02A26745800865406 /* Build configuration list for PBXNativeTarget "Curitibando" */;
 			buildPhases = (
+				E5CABA925FEA42731024A502 /* [CP] Check Pods Manifest.lock */,
 				0200BBD82A26745700865406 /* Sources */,
 				0200BBD92A26745700865406 /* Frameworks */,
 				0200BBDA2A26745700865406 /* Resources */,
+				4E884849B6EA06538E232B2C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E884849B6EA06538E232B2C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Curitibando/Pods-Curitibando-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Curitibando/Pods-Curitibando-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Curitibando/Pods-Curitibando-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5CABA925FEA42731024A502 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Curitibando-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0200BBD82A26745700865406 /* Sources */ = {
@@ -282,12 +350,15 @@
 		};
 		0200BBF12A26745800865406 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EB5AC2A0E255A442EAD702 /* Pods-Curitibando.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7GZTFJ44QJ;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Curitibando/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -310,12 +381,14 @@
 		};
 		0200BBF22A26745800865406 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1900714D9ACE86EA49DF5981 /* Pods-Curitibando.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7GZTFJ44QJ;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Curitibando/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
