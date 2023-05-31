@@ -1,0 +1,4 @@
+#ignore these files
+.DS_Store
+curitibando.xcodeproj/project.xcworkspace/xcuserdata/myusername.xcuserdata
+
